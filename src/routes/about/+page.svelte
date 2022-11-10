@@ -4,7 +4,13 @@
 </svelte:head>
 
 <div>
-	<h1>EvolvedChess</h1>
+	<h1>Evolved Chess</h1>
+	<h2>
+		A new world 
+	</h2>
+	<p>
+		This a paragraph 
+	</p>
 </div>
 
 <style>
