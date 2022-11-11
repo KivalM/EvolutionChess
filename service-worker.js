@@ -8,33 +8,33 @@ const u = [
   "/ukzn_hackathon/internal/immutable/assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
   "/ukzn_hackathon/internal/immutable/assets/fira-mono-latin-400-normal-e43b3538.woff2",
   "/ukzn_hackathon/internal/immutable/assets/fira-mono-all-400-normal-1e3b098c.woff",
-  "/ukzn_hackathon/internal/immutable/start-7071052b.js",
-  "/ukzn_hackathon/internal/immutable/components/pages/_layout.svelte-0fe3149e.js",
+  "/ukzn_hackathon/internal/immutable/start-d49a7544.js",
+  "/ukzn_hackathon/internal/immutable/components/pages/_layout.svelte-dfc303f5.js",
   "/ukzn_hackathon/internal/immutable/assets/_layout-85a0114b.css",
-  "/ukzn_hackathon/internal/immutable/components/error.svelte-dbda76ac.js",
-  "/ukzn_hackathon/internal/immutable/components/pages/_page.svelte-e6a84e09.js",
-  "/ukzn_hackathon/internal/immutable/components/pages/about/_page.svelte-309e0396.js",
+  "/ukzn_hackathon/internal/immutable/components/error.svelte-3e11dcce.js",
+  "/ukzn_hackathon/internal/immutable/components/pages/_page.svelte-6189af25.js",
+  "/ukzn_hackathon/internal/immutable/components/pages/about/_page.svelte-4d21d863.js",
   "/ukzn_hackathon/internal/immutable/assets/_page-47692af2.css",
-  "/ukzn_hackathon/internal/immutable/components/pages/contact/_page.svelte-29dc8a09.js",
-  "/ukzn_hackathon/internal/immutable/components/pages/play/_page.svelte-9315f7fd.js",
+  "/ukzn_hackathon/internal/immutable/components/pages/contact/_page.svelte-c7e9839f.js",
+  "/ukzn_hackathon/internal/immutable/components/pages/play/_page.svelte-099606ea.js",
   "/ukzn_hackathon/internal/immutable/modules/pages/_page.ts-5938f197.js",
   "/ukzn_hackathon/internal/immutable/modules/pages/about/_page.ts-6cf9c774.js",
   "/ukzn_hackathon/internal/immutable/modules/pages/contact/_page.ts-2f425749.js",
   "/ukzn_hackathon/internal/immutable/modules/pages/play/_page.ts-54a31dd9.js",
-  "/ukzn_hackathon/internal/immutable/chunks/singletons-6fb16295.js",
+  "/ukzn_hackathon/internal/immutable/chunks/singletons-0b07683b.js",
   "/ukzn_hackathon/internal/immutable/chunks/paths-846459bd.js",
-  "/ukzn_hackathon/internal/immutable/chunks/index-1223da0b.js",
+  "/ukzn_hackathon/internal/immutable/chunks/index-9311f287.js",
   "/ukzn_hackathon/internal/immutable/chunks/_page-6ab928b4.js",
   "/ukzn_hackathon/internal/immutable/chunks/_page-b83a0680.js",
   "/ukzn_hackathon/internal/immutable/chunks/environment-2d36df95.js",
   "/ukzn_hackathon/internal/immutable/chunks/_page-81147579.js",
   "/ukzn_hackathon/internal/immutable/chunks/_page-7cf4687b.js",
-  "/ukzn_hackathon/internal/immutable/chunks/0-70ae98ae.js",
-  "/ukzn_hackathon/internal/immutable/chunks/1-6f3f7ddc.js",
-  "/ukzn_hackathon/internal/immutable/chunks/2-af1a5ce7.js",
-  "/ukzn_hackathon/internal/immutable/chunks/3-5fd9671d.js",
-  "/ukzn_hackathon/internal/immutable/chunks/4-b9b1eeb4.js",
-  "/ukzn_hackathon/internal/immutable/chunks/5-76dda06f.js"
+  "/ukzn_hackathon/internal/immutable/chunks/0-f4385994.js",
+  "/ukzn_hackathon/internal/immutable/chunks/1-3415425a.js",
+  "/ukzn_hackathon/internal/immutable/chunks/2-11fdef91.js",
+  "/ukzn_hackathon/internal/immutable/chunks/3-2fc6bc8f.js",
+  "/ukzn_hackathon/internal/immutable/chunks/4-f6965460.js",
+  "/ukzn_hackathon/internal/immutable/chunks/5-cbdcae0d.js"
 ], k = [
   "/ukzn_hackathon/favicon.png",
   "/ukzn_hackathon/icons/logo_512.png",
@@ -43,7 +43,7 @@ const u = [
   "/ukzn_hackathon/logo_512.png",
   "/ukzn_hackathon/manifest.json",
   "/ukzn_hackathon/robots.txt"
-], c = "1668149593568", e = self, h = `cache${c}`, i = u.concat(k), m = new Set(i);
+], c = "1668153450230", e = self, h = `cache${c}`, i = u.concat(k), m = new Set(i);
 e.addEventListener("install", (a) => {
   a.waitUntil(
     caches.open(h).then((n) => n.addAll(i)).then(() => {
