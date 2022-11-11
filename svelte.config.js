@@ -1,5 +1,5 @@
-// import adapter from '@sveltejs/adapter-static';
-import adapter from 'svelte-adapter-github';
+import adapter from '@sveltejs/adapter-static';
+// import adapter from 'svelte-adapter-github';
 import preprocess from 'svelte-preprocess';
 
 const dev = process.env.NODE_ENV === 'development';
@@ -15,16 +15,9 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter({
-			pages: 'docs',
-			assets: 'docs',
-			fallback: null,
-			precompress: false,
-			domain: '',
-			jekyll: false
-		}),
+		adapter: adapter(),
 		paths: {
-			base: '/ukzn_hackathon',
+			base: process.env.NODE_ENV === "production" ? "/ukzn_hackathon" : "",
 		},
 		appDir: 'internal',
 	}
