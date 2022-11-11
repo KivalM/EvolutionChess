@@ -9,7 +9,7 @@
 			<h1
 				class="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white"
 			>
-				The next Generation of <span class="text-blue-800"> Chess</span>
+				The next generation of <div class="text-blue-800">Chess</div>
 			</h1>
 			<p
 				class="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
@@ -25,8 +25,8 @@
 				Play Now
 			</a>
 		</div>
-		<div class="hidden lg:mt-auto lg:col-span-5 lg:flex justify-center ">
-			<img src={queen} alt="mockup" />
+		<div class=" lg:mt-auto lg:col-span-5 lg:flex justify-center ">
+			<img src={queen} alt="queen-img" />
 		</div>
 	</div>
 </div>

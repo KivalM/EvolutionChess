@@ -1,13 +1,6 @@
 <script>
-	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
 	import { base } from '$app/paths';
 </script>
-
-<svelte:head>
-	<link rel="manifest" crossorigin="use-credentials" href="{base}/manifest.json" />
-</svelte:head>
 
 <header class="shadow">
 	<nav
@@ -48,7 +41,7 @@
 				</button>
 			</div>
 			<div
-				class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+				class="hidden justify-between items-end w-full md:flex md:w-auto md:order-1"
 				id="navbar-sticky"
 			>
 				<ul
@@ -86,6 +79,8 @@
 					</li>
 				</ul>
 			</div>
+
+			<div class="flex md:order-2" />
 		</div>
 	</nav>
 </header>
