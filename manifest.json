@@ -1,11 +1,11 @@
 {
     "name": "EvolveD Chess",
     "short_name": "EvolveD",
-    "start_url": "/",
-    "scope": "/",
+    "start_url": "/ukzn_hackathon/",
+    "scope": "/ukzn_hackathon/",
     "icons": [
         {
-            "src": "/logo_512.png",
+            "src": "/ukzn_hackathon/logo_512.png",
             "sizes": "192x192",
             "type": "image/png"
         }
