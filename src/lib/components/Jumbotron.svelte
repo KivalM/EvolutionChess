@@ -1,8 +1,5 @@
 <script>
-	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
 	import queen from '$lib/images/queen.png';
-	import github from '$lib/images/github.svg';
 </script>
 
 <div>
