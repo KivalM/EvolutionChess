@@ -38,6 +38,7 @@
 	"type": "module",
 	"dependencies": {
 		"darkmode-js": "^1.5.7",
+		"chess.js": "^1.0.0-alpha.0",
 		"gh-pages": "^4.0.0"
 	}
 }
