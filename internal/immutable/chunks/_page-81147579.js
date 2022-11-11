@@ -1,0 +1,1 @@
+import{d as e}from"./environment-2d36df95.js";const r=e,o=!0,s=Object.freeze(Object.defineProperty({__proto__:null,csr:r,prerender:o},Symbol.toStringTag,{value:"Module"}));export{s as _,r as c,o as p};
