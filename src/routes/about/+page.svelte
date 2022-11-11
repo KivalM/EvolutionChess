@@ -18,7 +18,7 @@
 		font-size: 50px;
 	}
 	h2 {
-		color: navy;
+		color: pink;
 		font-size: 40px;
 	}
 </style>
