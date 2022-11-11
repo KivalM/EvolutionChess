@@ -18,7 +18,7 @@
 		font-size: 50px;
 	}
 	h2 {
-		color: rgb(255, 192, 245);
+		color: rgb(245, 6, 205);
 		font-size: 40px;
 	}
 </style>
