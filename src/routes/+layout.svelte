@@ -2,6 +2,7 @@
 	import Header from '../lib/components/Header.svelte';
 	import './styles.css';
 	import '../app.css';
+	import 'flowbite/dist/flowbite.css';
 </script>
 
 <div class="app">
