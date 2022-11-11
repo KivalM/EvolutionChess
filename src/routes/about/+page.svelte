@@ -16,9 +16,11 @@
 	h1 {
 		color: navy;
 		font-size: 50px;
-	}
-	h2 {
+	} h2 {
 		color: rgb(245, 6, 205);
 		font-size: 40px;
+	} p {
+		color: blue;
+		font-size: 15px;
 	}
 </style>
