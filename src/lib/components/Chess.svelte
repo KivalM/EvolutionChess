@@ -11,15 +11,25 @@
 	let pieceSelected = false;
 
 	export let size = 800;
+	let loadedCount = 0;
+	let ready = false;
 
 	// export let flip = false;
 	// export let showCoords = true;
 
 	// preload images
 	let imgNames = 'rbnqkpRBNQKP'.split('');
+	let imgUrls = imgNames.map((name) => `${base}/chess/${name}.svg`);
+
 	for (let imgName of imgNames) {
 		images[imgName] = new Image();
 		images[imgName].src = `${base}/chess/${imgName}.svg`;
+		images[imgName].onload = () => {
+			loadedCount++;
+			if (loadedCount === imgNames.length) {
+				ready = true;
+			}
+		};
 	}
 
 	// Draw chessboard
@@ -133,6 +143,12 @@
 		drawPieces(fen);
 	}
 </script>
+
+<svelte:head>
+	{#each imgUrls as image}
+		<link rel="preload" as="image" href={image} />
+	{/each}
+</svelte:head>
 
 <!-- Game Stuff -->
 <section>
