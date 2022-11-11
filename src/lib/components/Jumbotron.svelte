@@ -25,7 +25,7 @@
 				Play Now
 			</a>
 		</div>
-		<div class="hidden lg:mt-0 lg:col-span-5 lg:flex ">
+		<div class="hidden lg:mt-auto lg:col-span-5 lg:flex justify-center ">
 			<img src={queen} alt="mockup" />
 		</div>
 	</div>
