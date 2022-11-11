@@ -3,8 +3,8 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Evolved Chess</title>
+	<meta name="description" content="Evolved Chess app" />
 </svelte:head>
 
 <section>
