@@ -11,21 +11,21 @@
 	<!-- align center -->
 	<div id="content" class="flex justify-center">
 		<div class="container">
-			<h1 class="text-4xl font-bold text-blue-700 ">Evolved Chess</h1>
+			<h1 class="text-4xl font-bold text-black-700 ">Evolved Chess</h1>
 			<h2 class="text-2xl font-bold ">A new world of chess awaits! Are you ready?!</h2>
-			<p class="my-4 text-lg text-gray-500">
+			<p class="my-4 text-lg text-black-500">
 				Chess got a whole lot interesting. As time goes on everything adapts and evolves so why not
 				this amazing game. We all know how intense chess battles are, now with a twist how will all
 				you chess grandmasters handle this?
 			</p>
 			<h3 class="font-bold">What's new :</h3>
-			<p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
+			<p class="mb-4 text-lg font-normal text- black-500 dark:text-black-400">
 				Imagine being a pawn fighting for your kingdom, with despair smacking against your face in
 				the midst of battle. No where to go but foward towards victory. With your heart pumping and
 				adrenaline rushing through your body. You slay your enemies one by one. You look down at
 				your hands and feel like hero in your own story. Now is your chance to be something more!!!
 			</p>
-			<ul class="space-y-1 max-w-md list-disc list-inside text-gray-500 dark:text-gray-400">
+			<ul class="space-y-1 max-w-md list-disc list-inside text-black-500 dark:text-black-400">
 				<li>Pawns can now evolve!</li>
 				<li>Every chess piece is assigned a certain number of points</li>
 				<ol class="pl-5 mt-2 space-y-1 list-decimal list-inside">
@@ -44,7 +44,7 @@
 
  <style>
 	body {
-	  background-image: url('chess2.jpg');
+	  background-image: url('chess1.jpg');
 	  background-size: cover;
 	}
 	</style>
