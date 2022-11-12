@@ -68,7 +68,7 @@
 						</li>
 						<li>
 							The game works best on a desktop computer. If you are experiencing visibility issues,
-							try zooming out.
+							try zooming out. The canvas will scale with screen size.
 						</li>
 
 						<li>
