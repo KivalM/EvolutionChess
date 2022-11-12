@@ -29,14 +29,14 @@
 				<li>Pawns can now evolve!</li>
 				<li>Every chess piece is assigned a certain number of points</li>
 				<ol class="pl-5 mt-2 space-y-1 list-decimal list-inside">
-				   <li> Queens are worth the most with 7 points </li>
-				   <li>Rooks are worth 5 points</li> 
-                   <li>Bishops and knights are worth 3 points</li>    
-				   <li> Pawns are worth 1 point</li> 
+					<li>Queens are worth the most with 7 points</li>
+					<li>Rooks are worth 5 points</li>
+					<li>Bishops and knights are worth 3 points</li>
+					<li>Pawns are worth 1 point</li>
 				</ol>
 				<li>Each time a pawn eliminates one of these pieces it evolves</li>
 			</ul>
-            <h4 class="font-bold"> How it works :</h4>
+			<h4 class="font-bold">How it works :</h4>
 		</div>
 	</div>
    </body>
