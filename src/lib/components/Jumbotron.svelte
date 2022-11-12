@@ -26,7 +26,7 @@
 			</a>
 		</div>
 		<div class=" lg:mt-auto lg:col-span-5 lg:flex justify-center ">
-			<img src={queen} alt="queen-img" />
+			<img src="queen1.jpg" alt="queen1" style="width:200px;height:350px;">
 		</div>
 	</div>
 </div>
