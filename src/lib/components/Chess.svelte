@@ -4,7 +4,7 @@
 	// import wasm from '../rust/pkg/rust.js';
 
 	import { Chess } from 'chess.js';
-	// import { onMount } from 'svelte';
+	import { onMount } from 'svelte';
 
 	let canvas;
 	let ctx;
@@ -39,9 +39,6 @@
 		images[imgName].src = `${base}/chess/${imgName}.svg`;
 		images[imgName].onload = () => {
 			loadedCount++;
-			if (loadedCount === imgNames.length) {
-				ready = true;
-			}
 		};
 	}
 
@@ -71,7 +68,16 @@
 		ctx.fill();
 	}
 
-	// draw pieces based on fen
+	function sizeDiv() {
+		let div = document.getElementById('canvas');
+		div.width = size;
+		div.height = size;
+		if (document.getElementById('side')) {
+			document.getElementById('side').style.width = size / 3 + 'px';
+		}
+	}
+
+	// draw pieces based on fen string
 	function drawPieces(fen) {
 		// draw pieces to canvas
 		let x = 0;
@@ -94,10 +100,45 @@
 		}
 	}
 
+	function updateBoard() {
+		// ctx.clearRect(0, 0, canvas.width, canvas.height);
+		drawBoard();
+		drawPieces(chess.fen());
+		updateText();
+		// sizeDiv();
+	}
+
+	function updateText() {
+		let title = document.getElementById('title');
+
+		// create a new chess instance otherwise the board breaks
+		let newChess = new Chess(chess.fen());
+
+		title.innerHTML = newChess.turn() == 'w' ? 'White' : 'Black';
+		if (newChess.isCheckmate()) {
+			title.innerHTML += ' is in checkmate';
+		} else if (newChess.inCheck()) {
+			title.innerHTML += ' is in check';
+		} else if (newChess.isStalemate()) {
+			title.innerHTML += ' is in stalemate';
+		} else if (newChess.isInsufficientMaterial()) {
+			title.innerHTML += ' is in insufficient material';
+		} else if (newChess.isDraw()) {
+			title.innerHTML += ' is in draw';
+		} else if (newChess.isGameOver()) {
+			title.innerHTML = 'Game over';
+		} else {
+			title.innerHTML += ' turn';
+		}
+	}
+
+	function moveAnimation() {}
+
 	// export let flip = false;
 	// export let showCoords = true;
 
 	function gameHandler(e) {
+		sizeDiv();
 		// @ts-ignore
 		let x = Math.floor((e.offsetX * 8) / size);
 		// @ts-ignore
@@ -132,23 +173,39 @@
 					ctx.clearRect(0, 0, canvas.width, canvas.height);
 					drawBoard();
 					drawPieces(chess.fen());
-
+					if (selectedPiece == null) {
+						document.getElementById('canvas').removeEventListener('mousemove', (e) => {});
+						return;
+					}
 					let type = selectedPiece.type;
 					if (selectedPiece.color == 'w') {
 						type = type.toUpperCase();
 					}
 					ctx.drawImage(images[type], x - size / 16, y - size / 16, size / 8, size / 8);
-
-					if (selectedPiece == null) {
-						document.getElementById('canvas').removeEventListener('mousemove', (e) => {});
-					}
 				});
 			}
 		} else {
+			let promotion = false;
+			console.log(selectedPiece);
+			if (selectedPiece.type == 'p') {
+				if (selectedPiece.color == 'w') {
+					if (chessPos[1] == 8) {
+						promotion = true;
+					}
+				} else {
+					if (chessPos[1] == 1) {
+						promotion = true;
+					}
+				}
+			}
 			let move = {
 				from: selectedPosition,
 				to: chessPos
 			};
+
+			if (promotion) {
+				move.promotion = 'q';
+			}
 			console.log(move);
 			if (chess.move(move)) {
 				console.log('move made');
@@ -161,12 +218,15 @@
 				evoMatrix[newY][newX] += evoMatrix[y][x];
 				evoMatrix[y][x] = 0;
 
+				let moves = document.getElementById('moves');
+				moves.innerHTML += `<li>${selectedPosition} -> ${chessPos}</li>`;
+
 				for (let i = 0; i < 8; i++) {
 					for (let j = 0; j < 8; j++) {
 						if (evoMatrix[i][j] > 2) {
 							console.log(evoMatrix[i][j]);
 							let p = chess.remove(chessPos);
-							console.log('removed: ' + p);
+							console.log(p);
 							switch (p.type) {
 								case 'p':
 									evoMatrix[i][j] = 1;
@@ -202,16 +262,30 @@
 			pieceSelected = false;
 			selectedPiece = null;
 			selectedPosition = null;
-			ctx.clearRect(0, 0, canvas.width, canvas.height);
 			document.getElementById('canvas').removeEventListener('mousemove', (e) => {});
-			drawBoard();
-			drawPieces(chess.fen());
 		}
 
-		drawBoard();
-		drawPieces(chess.fen());
+		updateBoard();
 		console.log('x: ' + chessX + ' y: ' + chessY);
 	}
+
+	function waitForElement(elementId, callBack) {
+		window.setTimeout(function () {
+			var element = document.getElementById(elementId);
+			if (element) {
+				callBack(elementId, element);
+			} else {
+				waitForElement(elementId, callBack);
+			}
+		}, 500);
+	}
+
+	onMount(async () => {
+		waitForElement('side', function () {
+			sizeDiv();
+			start();
+		});
+	});
 </script>
 
 <svelte:head>
@@ -223,11 +297,34 @@
 <!-- Game Stuff -->
 <section>
 	<!-- Game Canvas -->
-	<button on:click={start}>DRAW</button>
+	<div id="game" class="flex flex-row ">
+		<div id="board" class="">
+			<div id="boardEl" class="chessboard border-solid border-4 border-gray-500 ">
+				<canvas id="canvas" on:click={gameHandler} />
+			</div>
+		</div>
+		<div
+			id="side"
+			class="chessboard  py-3 border-solid border-4 border-gray-500 bg-gray-400 flex flex-col justify-start"
+		>
+			<div id="title" class=" w-100 text-center text-xl font-bold">White Turn</div>
+			<hr class="my-3 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+			<div id="controls" class="flex justify-center">
+				<span
+					class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+					>Resign</span
+				>
 
-	<div id="board">
-		<div id="boardEl" class="chessboard">
-			<canvas id="canvas" height={size} width={size} on:click={gameHandler} />
+				<span
+					class="	focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900"
+					>Hint</span
+				>
+			</div>
+			<hr class="my-3 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+			<div class="text-center">Move History</div>
+			<ul id="moves" class="mx-4 px-1 bg-blue-100 text-center overflow-auto">
+				<li />
+			</ul>
 		</div>
 	</div>
 </section>

@@ -3,7 +3,9 @@
 </script>
 
 <header class="shadow-md bg-gray-500">
-	<nav class="px-2 sm:px-4 py-2.5 bg-gray-200  w-full z-20 top-0 left-0 border-b border-gray-200 ">
+	<nav
+		class="px-2 sm:px-4 py-2.5 bg-gray-200  w-full z-20 top-0 left-0 border-b border-gray-200   dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+	>
 		<div class="container flex flex-wrap justify-between items-center mx-auto">
 			<a href="{base}/" class="flex items-center">
 				<img src="{base}/icons/logo_512.png" class="mr-3 h-6 sm:h-9" alt="EvolvedChess Logo" />
