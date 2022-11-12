@@ -1,11 +1,10 @@
 <script>
 	// @ts-nocheck
-
 	import { base } from '$app/paths';
 	// import wasm from '../rust/pkg/rust.js';
 
 	import { Chess } from 'chess.js';
-	import { onMount } from 'svelte';
+	// import { onMount } from 'svelte';
 
 	let canvas;
 	let ctx;
@@ -27,12 +26,9 @@
 		[0, 0, 0, 0, 0, 0, 0, 0],
 		[0, 0, 0, 0, 0, 0, 0, 0],
 		[0, 0, 0, 0, 0, 0, 0, 0],
-		[1, 1, 1, 1, 1, 1, 1, 1],
+		[1, 1, 1, 1, 0, 1, 1, 1],
 		[1, 1, 1, 1, 1, 1, 1, 1]
 	];
-
-	// export let flip = false;
-	// export let showCoords = true;
 
 	// preload images
 	let imgNames = 'rbnqkpRBNQKP'.split('');
@@ -47,6 +43,15 @@
 				ready = true;
 			}
 		};
+	}
+
+	function start() {
+		canvas = document.getElementById('canvas');
+		ctx = canvas.getContext('2d');
+		chess = new Chess();
+
+		drawBoard();
+		drawPieces(chess.fen());
 	}
 
 	// Draw chessboard
@@ -88,6 +93,9 @@
 			}
 		}
 	}
+
+	// export let flip = false;
+	// export let showCoords = true;
 
 	function gameHandler(e) {
 		// @ts-ignore
@@ -203,15 +211,6 @@
 		drawBoard();
 		drawPieces(chess.fen());
 		console.log('x: ' + chessX + ' y: ' + chessY);
-	}
-
-	function start() {
-		canvas = document.getElementById('canvas');
-		ctx = canvas.getContext('2d');
-		chess = new Chess();
-
-		drawBoard();
-		drawPieces(chess.fen());
 	}
 </script>
 
