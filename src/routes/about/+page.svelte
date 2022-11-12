@@ -1,11 +1,15 @@
+<script>
+	import { base } from '$app/paths';
+</script>
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About this app" />
 </svelte:head>
 
 <section>
+	<body>
 	<!-- align center -->
-	<div class="flex justify-center">
+	<div id="content" class="flex justify-center">
 		<div class="container">
 			<h1 class="text-4xl font-bold text-blue-700 ">Evolved Chess</h1>
 			<h2 class="text-2xl font-bold ">A new world of chess awaits! Are you ready?!</h2>
@@ -35,7 +39,12 @@
             <h4 class="font-bold"> How it works :</h4>
 		</div>
 	</div>
-</section>
+   </body>
+ </section>
 
-<style>
-</style>
+ <style>
+	body {
+	  background-image: url('chess2.jpg');
+	  background-size: cover;
+	}
+	</style>
