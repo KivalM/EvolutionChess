@@ -122,6 +122,17 @@
 	}
 
 	function sizeDiv() {
+		//check screen size
+		let width = window.innerWidth;
+		let height = window.innerHeight;
+
+		//set size of canvas
+		if (width > height) {
+			size = height - 100;
+		} else {
+			size = width - 100;
+		}
+
 		let div = document.getElementById('canvas');
 		div.width = size;
 		div.height = size;
@@ -298,7 +309,7 @@
 									chess.put({ type: 'r', color: p.color }, chessPos);
 									break;
 								case 'r':
-									evoMatrix[i][j] = 2;
+									evoMatrix[i][j] = 1;
 									chess.put({ type: 'q', color: p.color }, chessPos);
 									break;
 								case 'q':

@@ -112,8 +112,4 @@
 </header>
 
 <style>
-	.icon {
-		background-image : url ("/icons/EvoChess5.png");
-		background-size: auto;
-	}
 </style>

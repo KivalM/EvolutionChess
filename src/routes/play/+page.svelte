@@ -6,6 +6,7 @@
 	let onclick = () => {
 		// check checkbox
 
+		// @ts-ignore
 		AI = document.getElementById('AI').checked;
 		ready = true;
 	};
@@ -49,8 +50,44 @@
 						class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
 					/>
 					<label for="default-radio-2" class="ml-2 text-sm font-medium text-none dark:text-gray-300"
-						>Vs AI
+						>Vs AI (VERY DIFFICULT)
 					</label>
+				</div>
+
+				<div class=" items-center text-white">
+					<br />
+					<br />
+					<h2 class="text-xl ">How to Play</h2>
+					<hr />
+					<ul
+						class="space-y-1 max-w-md text-md list-disc list-inside text-white dark:text-black-400"
+					>
+						<li>
+							To play, click on a piece to select it, then click on a square to move it there. You
+							cannot drag the pieces around the board.
+						</li>
+						<li>
+							The game works best on a desktop computer. If you are experiencing visibility issues,
+							try zooming out.
+						</li>
+
+						<li>
+							You can also play against the computer. To do this, click the "Vs AI" button. This is
+							very difficult.
+						</li>
+
+						<li>
+							You can also play against a friend. To do this, click the "PvP turn based" button. You
+							will need to take turns moving your pieces.
+						</li>
+
+						<li>
+							Pieces will evolve with takeovers. Every 2(this may vary due to lack of bug testing)
+							takeovers, a piece will evolve. The order is pawn > bishop > knight > rook > queen;
+							the pawn will evolve into a bishop, the bishop into a knight, the knight into a rook,
+							the rook into a queen, and the queen will not evolve.
+						</li>
+					</ul>
 				</div>
 
 				<div class="flex items-center">
