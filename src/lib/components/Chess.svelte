@@ -397,13 +397,16 @@
 	<!-- Game Canvas -->
 	<div id="game" class="flex flex-row ">
 		<div id="board" class="">
-			<div id="boardEl" class="chessboard border-solid border-4 border-gray-500 ">
+			<div
+				id="boardEl"
+				class="chessboard border-solid border-4 dark:border-gray-700 border-gray-300 "
+			>
 				<canvas id="canvas" on:click={gameHandler} />
 			</div>
 		</div>
 		<div
 			id="side"
-			class="chessboard  py-3 border-solid border-4 border-gray-500 bg-gray-400 flex flex-col justify-start"
+			class="chessboard  py-3 border-solid border-4 dark:border-gray-700 border-gray-300 bg-gray-400 dark:bg-gray-200 flex flex-col justify-start"
 		>
 			<div id="title" class=" w-100 text-center text-xl font-bold">White Turn</div>
 			<hr class="my-3 h-px bg-gray-200 border-0 dark:bg-gray-700" />
