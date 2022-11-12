@@ -7,22 +7,22 @@ const i = [
   "/ukzn_hackathon/internal/immutable/assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
   "/ukzn_hackathon/internal/immutable/assets/fira-mono-latin-400-normal-e43b3538.woff2",
   "/ukzn_hackathon/internal/immutable/assets/fira-mono-all-400-normal-1e3b098c.woff",
-  "/ukzn_hackathon/internal/immutable/start-53519710.js",
+  "/ukzn_hackathon/internal/immutable/start-809e4bf0.js",
   "/ukzn_hackathon/internal/immutable/components/pages/_layout.svelte-74155302.js",
   "/ukzn_hackathon/internal/immutable/assets/_layout-02a70440.css",
-  "/ukzn_hackathon/internal/immutable/components/error.svelte-88e8dba4.js",
+  "/ukzn_hackathon/internal/immutable/components/error.svelte-21fb8f46.js",
   "/ukzn_hackathon/internal/immutable/components/pages/_page.svelte-d335e044.js",
   "/ukzn_hackathon/internal/immutable/assets/_page-5185e655.css",
   "/ukzn_hackathon/internal/immutable/components/pages/about/_page.svelte-e9e6a0bd.js",
   "/ukzn_hackathon/internal/immutable/assets/_page-994ac01a.css",
-  "/ukzn_hackathon/internal/immutable/components/pages/play/_page.svelte-553e32e6.js",
+  "/ukzn_hackathon/internal/immutable/components/pages/play/_page.svelte-92e5720e.js",
   "/ukzn_hackathon/internal/immutable/components/pages/team/_page.svelte-35f2a8a1.js",
   "/ukzn_hackathon/internal/immutable/assets/_page-40a719e3.css",
   "/ukzn_hackathon/internal/immutable/modules/pages/_page.ts-5938f197.js",
   "/ukzn_hackathon/internal/immutable/modules/pages/about/_page.ts-6cf9c774.js",
   "/ukzn_hackathon/internal/immutable/modules/pages/play/_page.ts-54a31dd9.js",
   "/ukzn_hackathon/internal/immutable/modules/pages/team/_page.ts-7908ccc3.js",
-  "/ukzn_hackathon/internal/immutable/chunks/singletons-445be0fe.js",
+  "/ukzn_hackathon/internal/immutable/chunks/singletons-bb68f1d1.js",
   "/ukzn_hackathon/internal/immutable/chunks/paths-846459bd.js",
   "/ukzn_hackathon/internal/immutable/chunks/index-f7f915e0.js",
   "/ukzn_hackathon/internal/immutable/chunks/_page-6ab928b4.js",
@@ -31,10 +31,10 @@ const i = [
   "/ukzn_hackathon/internal/immutable/chunks/_page-7cf4687b.js",
   "/ukzn_hackathon/internal/immutable/chunks/_page-8dbd44b8.js",
   "/ukzn_hackathon/internal/immutable/chunks/0-9f2438a2.js",
-  "/ukzn_hackathon/internal/immutable/chunks/1-0c0ddb39.js",
+  "/ukzn_hackathon/internal/immutable/chunks/1-11d7e93d.js",
   "/ukzn_hackathon/internal/immutable/chunks/2-005099eb.js",
   "/ukzn_hackathon/internal/immutable/chunks/3-9c37e46b.js",
-  "/ukzn_hackathon/internal/immutable/chunks/4-c1eceb2e.js",
+  "/ukzn_hackathon/internal/immutable/chunks/4-a7f3c9a4.js",
   "/ukzn_hackathon/internal/immutable/chunks/5-c90bdfdd.js"
 ], l = [
   "/ukzn_hackathon/chess/B.svg",
@@ -80,7 +80,7 @@ const i = [
   "/ukzn_hackathon/ukzn_hackathon/chess8.jpg",
   "/ukzn_hackathon/ukzn_hackathon/logo_512.png",
   "/ukzn_hackathon/ukzn_hackathon/queen.png"
-], c = "1668264445282", e = self, o = `cache${c}`, k = i.concat(l), m = new Set(k);
+], c = "1668264982994", e = self, o = `cache${c}`, k = i.concat(l), m = new Set(k);
 e.addEventListener("install", (a) => {
   a.waitUntil(
     caches.open(o).then((n) => n.addAll(k)).then(() => {
