@@ -21,7 +21,7 @@
 			<h3 class="text-3xl font-bold dark:text-white pb-4 text-center">Game Setup</h3>
 			<div class="shadow bg-grey-400 p-10 rounded flex flex-col items-start">
 				<div class="mb-6">
-					<span class="text-xl block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+					<span class="text-xl block mb-2 text-sm font-medium text-none dark:text-gray-300">
 						Game Type
 					</span>
 				</div>
@@ -36,7 +36,7 @@
 					/>
 					<label
 						for="default-radio-1"
-						class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Offline</label
+						class="ml-2 text-sm font-medium text-none dark:text-gray-300">Offline</label
 					>
 				</div>
 				<div class="flex items-center">
@@ -50,7 +50,7 @@
 					/>
 					<label
 						for="default-radio-2"
-						class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+						class="ml-2 text-sm font-medium text-none dark:text-gray-300"
 						>Online (todo)
 					</label>
 				</div>
@@ -58,7 +58,7 @@
 				<div class="flex items-center">
 					<button
 						type="button"
-						class="text-white bg-green-700 hover:bg-blue-800 m-4 r-0 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+						class="text-white bg-blue-700 hover:bg-blue-800 m-4 r-0 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
 						on:click={onclick}>Go</button
 					>
 				</div>

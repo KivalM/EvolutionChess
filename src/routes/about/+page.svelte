@@ -19,16 +19,16 @@
 				you chess grandmasters handle this?
 			</p>
 			<h3 class="font-bold">What's new :</h3>
-			<p class="mb-4 text-lg font-normal text- black-500 dark:text-black-400">
+			<p class="mb-4 text-lg font-normal text-black-500 dark:text-black-400">
 				Imagine being a pawn fighting for your kingdom, with despair smacking against your face in
 				the midst of battle. No where to go but foward towards victory. With your heart pumping and
 				adrenaline rushing through your body. You slay your enemies one by one. You look down at
 				your hands and feel like hero in your own story. Now is your chance to be something more!!!
 			</p>
-			<ul class="space-y-1 max-w-md list-disc list-inside text-black-500 dark:text-black-400">
+			<ul class="space-y-1 max-w-md text-lg list-disc list-inside text-white dark:text-black-400">
 				<li>Pawns can now evolve!</li>
 				<li>Every chess piece is assigned a certain number of points</li>
-				<ol class="pl-5 mt-2 space-y-1 list-decimal list-inside">
+				<ol class="pl-5 text-lg mt-2 space-y-1 list-decimal list-inside">
 					<li>Queens are worth the most with 7 points</li>
 					<li>Rooks are worth 5 points</li>
 					<li>Bishops and knights are worth 3 points</li>
@@ -37,6 +37,9 @@
 				<li>Each time a pawn eliminates one of these pieces it evolves</li>
 			</ul>
 			<h4 class="font-bold">How it works :</h4>
+			<p class="mb-4 text-lg font-normal text-black-500 dark:text-black-400">
+				Game mechanics go here
+			</p>
 		</div>
 	</div>
    </body>
