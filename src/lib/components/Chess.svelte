@@ -1,9 +1,16 @@
 <script>
 	// @ts-nocheck
 	import { base } from '$app/paths';
-	// import wasm from '../rust/pkg/rust.js';
+	import init, { test } from 'rust';
+	// Don't worry if vscode told you can't find my-crate
+	// It's because you're using a local crate
+	// after yarn dev, wasm-pack plugin will install my-crate for you
 
+	init().then(() => {
+		console.log(test());
+	});
 	import { Chess } from 'chess.js';
+
 	import { onMount } from 'svelte';
 
 	let canvas;
@@ -49,6 +56,37 @@
 
 		drawBoard();
 		drawPieces(chess.fen());
+	}
+
+	function resign() {
+		winnerWinnerChickenDinner(true);
+	}
+
+	function winnerWinnerChickenDinner(resign) {
+		if (resign) {
+			let winner = chess.turn() != 'w' ? 'White' : 'Black';
+			if (winner) {
+				alert(`Game Over! ${winner} wins!`);
+			}
+		} else {
+			let winner = chess.turn() != 'w' ? 'Black' : 'White';
+			if (winner) {
+				alert(`Game Over! ${winner} wins!`);
+			}
+		}
+
+		chess = new Chess();
+		let moves = document.getElementById('moves');
+		moves.innerHTML = '';
+		updateBoard();
+	}
+
+	function noWinnerWinnerChickenDinner() {
+		alert(`Game Over! It's a draw!`);
+		chess = new Chess();
+		let moves = document.getElementById('moves');
+		moves.innerHTML = '';
+		updateBoard();
 	}
 
 	// Draw chessboard
@@ -117,14 +155,18 @@
 		title.innerHTML = newChess.turn() == 'w' ? 'White' : 'Black';
 		if (newChess.isCheckmate()) {
 			title.innerHTML += ' is in checkmate';
+			winnerWinnerChickenDinner(false);
 		} else if (newChess.inCheck()) {
 			title.innerHTML += ' is in check';
 		} else if (newChess.isStalemate()) {
 			title.innerHTML += ' is in stalemate';
+			noWinnerWinnerChickenDinner();
 		} else if (newChess.isInsufficientMaterial()) {
 			title.innerHTML += ' is in insufficient material';
+			noWinnerWinnerChickenDinner();
 		} else if (newChess.isDraw()) {
 			title.innerHTML += ' is in draw';
+			noWinnerWinnerChickenDinner();
 		} else if (newChess.isGameOver()) {
 			title.innerHTML = 'Game over';
 		} else {
@@ -280,6 +322,8 @@
 		}, 500);
 	}
 
+	function best_move() {}
+
 	onMount(async () => {
 		waitForElement('side', function () {
 			sizeDiv();
@@ -310,7 +354,9 @@
 			<div id="title" class=" w-100 text-center text-xl font-bold">White Turn</div>
 			<hr class="my-3 h-px bg-gray-200 border-0 dark:bg-gray-700" />
 			<div id="controls" class="flex justify-center">
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<span
+					on:click={resign}
 					class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
 					>Resign</span
 				>

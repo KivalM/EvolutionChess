@@ -34,9 +34,8 @@
 						name="default-radio"
 						class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
 					/>
-					<label
-						for="default-radio-1"
-						class="ml-2 text-sm font-medium text-none dark:text-gray-300">Offline</label
+					<label for="default-radio-1" class="ml-2 text-sm font-medium text-none dark:text-gray-300"
+						>Offline</label
 					>
 				</div>
 				<div class="flex items-center">
@@ -48,10 +47,40 @@
 						name="default-radio"
 						class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
 					/>
-					<label
-						for="default-radio-2"
-						class="ml-2 text-sm font-medium text-none dark:text-gray-300"
+					<label for="default-radio-2" class="ml-2 text-sm font-medium text-none dark:text-gray-300"
 						>Online (todo)
+					</label>
+				</div>
+
+				<div class="mb-6">
+					<span class="text-xl block mb-2 text-sm font-medium text-none dark:text-gray-300">
+						Versus
+					</span>
+				</div>
+				<div class="flex items-center mb-4">
+					<input
+						id="default-radio-1"
+						checked
+						type="radio"
+						value="checked"
+						name="default-radio"
+						class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+					/>
+					<label for="default-radio-1" class="ml-2 text-sm font-medium text-none dark:text-gray-300"
+						>PvP turn based</label
+					>
+				</div>
+				<div class="flex items-center">
+					<input
+						disabled
+						id="default-radio-2"
+						type="radio"
+						value=""
+						name="default-radio"
+						class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+					/>
+					<label for="default-radio-2" class="ml-2 text-sm font-medium text-none dark:text-gray-300"
+						>Vs AI
 					</label>
 				</div>
 
