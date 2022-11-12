@@ -3,11 +3,11 @@
 	import { base } from '$app/paths';
 </script>
 
-<div>
-	<div class="grid py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+<div class="dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+	<div class="grid py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 ">
 		<div class="place-self-center mr-auto lg:col-span-7">
 			<h1
-				class="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white"
+				class="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white "
 			>
 				The next generation of <div class="text-blue-800">Chess</div>
 			</h1>
