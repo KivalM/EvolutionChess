@@ -1,5 +1,5 @@
 <script>
-	import queen from '$lib/images/queen.png';
+	// import queen from '$lib/images/queen.png';
 	import { base } from '$app/paths';
 </script>
 

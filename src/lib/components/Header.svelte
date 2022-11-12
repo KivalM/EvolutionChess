@@ -1,5 +1,21 @@
 <script>
 	import { base } from '$app/paths';
+	import lightbulb from '../images/lightbulb.png';
+
+	function darkMode() {
+		document.getElementsByTagName('html')[0].classList.add('dark');
+	}
+	function lightMode() {
+		document.getElementsByTagName('html')[0].classList.remove('dark');
+	}
+
+	function toggle_mode() {
+		if (document.getElementsByTagName('html')[0].classList.contains('dark')) {
+			lightMode();
+		} else {
+			darkMode();
+		}
+	}
 </script>
 
 <header class="shadow-md bg-gray-500">
@@ -13,7 +29,7 @@
 					>EvolvedChess</span
 				>
 				<span
-					class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900"
+					class="mx-3 bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900"
 					>Beta</span
 				>
 			</a>
@@ -80,7 +96,17 @@
 				</ul>
 			</div>
 
-			<div class="flex md:order-2" />
+			<div class="flex md:order-2">
+				<button
+					id="theme-toggle"
+					type="button"
+					class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+					aria-label="Toggle color mode"
+					on:click={toggle_mode}
+				>
+					<img src={lightbulb} alt="" class="mr-3 h-6 sm:h-9 dark:invert" />
+				</button>
+			</div>
 		</div>
 	</nav>
 </header>
