@@ -4,6 +4,9 @@
 	import { Chess } from 'chess.js';
 	import { onMount } from 'svelte';
 	import init, { best_move } from 'rust';
+	import { check_outros } from 'svelte/internal';
+
+	export let AI = false;
 
 	let canvas;
 	let ctx;
@@ -70,6 +73,16 @@
 		chess = new Chess();
 		let moves = document.getElementById('moves');
 		moves.innerHTML = '';
+		evoMatrix = [
+			[1, 1, 1, 1, 1, 1, 1, 1],
+			[1, 1, 1, 1, 1, 1, 1, 1],
+			[0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0],
+			[1, 1, 1, 1, 0, 1, 1, 1],
+			[1, 1, 1, 1, 1, 1, 1, 1]
+		];
 		updateBoard();
 	}
 
@@ -78,6 +91,16 @@
 		chess = new Chess();
 		let moves = document.getElementById('moves');
 		moves.innerHTML = '';
+		evoMatrix = [
+			[1, 1, 1, 1, 1, 1, 1, 1],
+			[1, 1, 1, 1, 1, 1, 1, 1],
+			[0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0],
+			[1, 1, 1, 1, 0, 1, 1, 1],
+			[1, 1, 1, 1, 1, 1, 1, 1]
+		];
 		updateBoard();
 	}
 
@@ -267,15 +290,15 @@
 									chess.put({ type: 'b', color: p.color }, chessPos);
 									break;
 								case 'b':
-									evoMatrix[i][j] = 2;
+									evoMatrix[i][j] = 1;
 									chess.put({ type: 'n', color: p.color }, chessPos);
 									break;
 								case 'n':
-									evoMatrix[i][j] = 3;
+									evoMatrix[i][j] = 1;
 									chess.put({ type: 'r', color: p.color }, chessPos);
 									break;
 								case 'r':
-									evoMatrix[i][j] = 4;
+									evoMatrix[i][j] = 2;
 									chess.put({ type: 'q', color: p.color }, chessPos);
 									break;
 								case 'q':
@@ -299,6 +322,26 @@
 			document.getElementById('canvas').removeEventListener('mousemove', (e) => {});
 		}
 
+		if (AI && chess.turn() == 'b') {
+			let move = bestMove(); // e2 e4
+			// alert(move);
+			let from = move.substring(0, 2);
+			let to = move.substring(3, 5);
+
+			let moveObj = {
+				from: from,
+				to: to
+			};
+
+			let moves = document.getElementById('moves');
+			moves.innerHTML += `<li>${from} -> ${to}</li>`;
+
+			// console.log(moveObj);
+
+			console.log(chess.move(moveObj));
+			updateBoard();
+		}
+
 		updateBoard();
 		console.log('x: ' + chessX + ' y: ' + chessY);
 	}
@@ -315,7 +358,7 @@
 	}
 
 	function bestMove() {
-		return best_move(chess.fen(), 10);
+		return best_move(chess.fen(), 3);
 	}
 
 	function hint() {

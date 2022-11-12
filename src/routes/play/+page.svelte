@@ -1,9 +1,12 @@
 <script>
 	import Chess from '$lib/components/Chess.svelte';
-
+	let AI = false;
 	let ready = false;
 
 	let onclick = () => {
+		// check checkbox
+
+		AI = document.getElementById('AI').checked;
 		ready = true;
 	};
 </script>
@@ -15,43 +18,11 @@
 
 <div class="flex justify-center">
 	{#if ready}
-		<Chess />
+		<Chess {AI} />
 	{:else}
 		<div class=" shadow-xl border-gray-300 border-2 rounded-lg p-20 ">
 			<h3 class="text-3xl font-bold dark:text-white pb-4 text-center">Game Setup</h3>
 			<div class="shadow bg-grey-400 p-10 rounded flex flex-col items-start">
-				<div class="mb-6">
-					<span class="text-xl block mb-2 text-sm font-medium text-none dark:text-gray-300">
-						Game Type
-					</span>
-				</div>
-				<div class="flex items-center mb-4">
-					<input
-						id="default-radio-1"
-						checked
-						type="radio"
-						value="checked"
-						name="default-radio"
-						class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-					/>
-					<label for="default-radio-1" class="ml-2 text-sm font-medium text-none dark:text-gray-300"
-						>Offline</label
-					>
-				</div>
-				<div class="flex items-center">
-					<input
-						disabled
-						id="default-radio-2"
-						type="radio"
-						value=""
-						name="default-radio"
-						class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-					/>
-					<label for="default-radio-2" class="ml-2 text-sm font-medium text-none dark:text-gray-300"
-						>Online (todo)
-					</label>
-				</div>
-
 				<div class="mb-6">
 					<span class="text-xl block mb-2 text-sm font-medium text-none dark:text-gray-300">
 						Versus
@@ -62,7 +33,6 @@
 						id="default-radio-1"
 						checked
 						type="radio"
-						value="checked"
 						name="default-radio"
 						class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
 					/>
@@ -72,10 +42,9 @@
 				</div>
 				<div class="flex items-center">
 					<input
-						disabled
-						id="default-radio-2"
+						id="AI"
 						type="radio"
-						value=""
+						value="checked"
 						name="default-radio"
 						class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
 					/>
