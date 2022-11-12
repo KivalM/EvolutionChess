@@ -11,15 +11,15 @@
 	<!-- align center -->
 	<div id="content" class="flex justify-center">
 		<div class="container">
-			<h1 class="text-4xl font-bold text-black-700 ">Evolved Chess</h1>
-			<h2 class="text-2xl font-bold ">A new world of chess awaits! Are you ready?!</h2>
-			<p class="my-4 text-lg text-black-500">
+			<h1 class="text-4xl font-bold text-white ">EvoChess</h1>
+			<h2 class="text-2xl font-bold text-white ">A new world of chess awaits! Are you ready?!</h2>
+			<p class="my-4 text-lg text-white">
 				Chess got a whole lot interesting. As time goes on everything adapts and evolves so why not
 				this amazing game. We all know how intense chess battles are, now with a twist how will all
 				you chess grandmasters handle this?
 			</p>
-			<h3 class="font-bold">What's new :</h3>
-			<p class="mb-4 text-lg font-normal text-black-500 dark:text-black-400">
+			<h3 class="font-bold text-white">What's new :</h3>
+			<p class="mb-4 text-lg font-normal text-white dark:text-black-400">
 				Imagine being a pawn fighting for your kingdom, with despair smacking against your face in
 				the midst of battle. No where to go but foward towards victory. With your heart pumping and
 				adrenaline rushing through your body. You slay your enemies one by one. You look down at
@@ -36,8 +36,8 @@
 				</ol>
 				<li>Each time a pawn eliminates one of these pieces it evolves</li>
 			</ul>
-			<h4 class="font-bold">How it works :</h4>
-			<p class="mb-4 text-lg font-normal text-black-500 dark:text-black-400">
+			<h4 class="font-bold text-white">How it works :</h4>
+			<p class="mb-4 text-lg font-normal text-white dark:text-black-400">
 				Game mechanics go here
 			</p>
 		</div>
@@ -47,7 +47,7 @@
 
  <style>
 	body {
-	  background-image: url('chess1.jpg');
+	  background-image: url('ukzn_hackathon/chess8.jpg');
 	  background-size: cover;
 	}
 	</style>

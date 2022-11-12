@@ -21,6 +21,10 @@
 					/>
 					<h5 class="mb-1 text-xl font-medium text-none dark:text-white">Seevan Ponnan</h5>
 					<span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
+					<p class="text-sm text-gray-500 dark:text-gray-400"> 
+						 A 20 year old aspiring Data Scientist from UKZN Westville Campus
+						<br> Always learning something new everyday
+					</p>
 				</div></a
 			>
 			<a href="https://github.com/KivalM" target="_blank" rel="noreferrer">
@@ -32,8 +36,18 @@
 					/>
 					<h5 class="mb-1 text-xl font-medium text-none dark:text-white">Kival Mahadew</h5>
 					<span class="text-sm text-gray-500 dark:text-gray-400">Programmer</span>
+					<p class="text-sm text-gray-500 dark:text-gray-400"> 
+						 A 19 year old future Computer Scientist from UKZN Westville Campus
+					    <br> Solving problems is a way of life 
+					</p>
 				</div></a
 			>
 		</div>
 	</div>
 </section>
+
+<style>
+	p {
+	 text-align:center
+	}
+	</style>

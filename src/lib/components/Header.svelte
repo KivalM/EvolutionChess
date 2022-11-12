@@ -6,14 +6,14 @@
 	<nav
 		class="px-2 sm:px-4 py-2.5 bg-gray-200  w-full z-20 top-0 left-0 border-b border-gray-200   dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
 	>
-		<div class="container flex flex-wrap justify-between items-center mx-auto">
+		<div class="flex space-x-4 container flex flex-wrap justify-between items-center mx-auto">
 			<a href="{base}/" class="flex items-center">
-				<img src="{base}/icons/logo_512.png" class="mr-3 h-6 sm:h-9" alt="EvolvedChess Logo" />
-				<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
-					>EvolvedChess</span
+				<img src="{base}/icons/EvoChess5.png" class="mr-3 h-6 sm:h-9" alt="EvoChess5" />
+				<span class=" self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+					>EvoChess</span
 				>
 				<span
-					class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900"
+				class=" m-1 bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900"
 					>Beta</span
 				>
 			</a>
@@ -86,4 +86,8 @@
 </header>
 
 <style>
+	.icon {
+		background-image : url ("/icons/EvoChess5.png");
+		background-size: auto;
+	}
 </style>
