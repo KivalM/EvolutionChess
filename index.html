@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
 	<meta charset="utf-8" />
@@ -7,13 +7,14 @@
 	<meta name="viewport" content="width=device-width" />
 
 	<meta http-equiv="content-security-policy" content="">
-		<link href="/ukzn_hackathon/internal/immutable/assets/_layout-a92eb04b.css" rel="stylesheet">
-		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/start-9bdf6cbe.js">
-		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/chunks/index-3558dd56.js">
-		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/chunks/singletons-3e7c8235.js">
+		<link href="/ukzn_hackathon/internal/immutable/assets/_layout-c8fd10ac.css" rel="stylesheet">
+		<link href="/ukzn_hackathon/internal/immutable/assets/_page-5185e655.css" rel="stylesheet">
+		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/start-07b1ca21.js">
+		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/chunks/index-79f2c8a6.js">
+		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/chunks/singletons-99e36496.js">
 		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/chunks/paths-846459bd.js">
-		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/components/pages/_layout.svelte-28397d43.js">
-		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/components/pages/_page.svelte-010b6216.js">
+		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/components/pages/_layout.svelte-d76c5553.js">
+		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/components/pages/_page.svelte-12a2a592.js">
 		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/modules/pages/_page.ts-5938f197.js">
 		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/chunks/_page-6ab928b4.js">
 		<script>
@@ -23,16 +24,28 @@
 				});
 			}
 		</script><title>Evolved Chess</title><!-- HEAD_svelte-1bea99h_START --><link rel="manifest" crossorigin="use-credentials" href="/ukzn_hackathon/manifest.json"><!-- HEAD_svelte-1bea99h_END --><!-- HEAD_svelte-14dltew_START --><meta name="description" content="Evolved Chess app"><!-- HEAD_svelte-14dltew_END -->
-	
+	<title>Document</title>
+
+	<script>
+		function darkMode() {
+			document.getElementsByTagName("html")[0].classList.add("dark");
+		}
+		function lightMode() {
+			document.getElementsByTagName("html")[0].classList.remove("dark");
+		}
+	</script>
+
+
+
 </head>
 
-<body data-sveltekit-prefetch>
+<body data-sveltekit-prefetch class=" dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
 	<div>
 
 
 
 
-<div class="app"><header class="shadow-md bg-gray-500"><nav class="px-2 sm:px-4 py-2.5 bg-gray-200 w-full z-20 top-0 left-0 border-b border-gray-200 "><div class="container flex flex-wrap justify-between items-center mx-auto"><a href="/ukzn_hackathon/" class="flex items-center"><img src="/ukzn_hackathon/icons/logo_512.png" class="mr-3 h-6 sm:h-9" alt="EvolvedChess Logo">
+<div class="app"><header class="shadow-md bg-gray-500"><nav class="px-2 sm:px-4 py-2.5 bg-gray-200 w-full z-20 top-0 left-0 border-b border-gray-200 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"><div class="container flex flex-wrap justify-between items-center mx-auto"><a href="/ukzn_hackathon/" class="flex items-center"><img src="/ukzn_hackathon/icons/logo_512.png" class="mr-3 h-6 sm:h-9" alt="EvolvedChess Logo">
 				<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">EvolvedChess</span>
 				<span class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900">Beta</span></a>
 			<div class="flex md:order-2"><button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false"><span class="sr-only">Open main menu</span>
@@ -49,14 +62,14 @@
 
 	<main>
 
-<section><div><div class="grid py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"><div class="place-self-center mr-auto lg:col-span-7"><h1 class="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">The next generation of <div class="text-blue-800">Chess</div></h1>
+<section><div class="dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"><div class="grid py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 "><div class="place-self-center mr-auto lg:col-span-7"><h1 class="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white ">The next generation of <div class="text-blue-800">Chess</div></h1>
 			<p class="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">From complex opening theory to endgame technique, Chess is a game of infinite depth. Now
 				with complex evolution and AI, Chess is a game that will never be the same.
 			</p>
 
 			<a href="/ukzn_hackathon/play" class="bg-blue-800 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-gray-300 hover:bg-blue-600 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">Play Now
 			</a></div>
-		<div class="lg:mt-auto lg:col-span-5 lg:flex justify-center "><img src="data:image/png;base64,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" alt="queen-img"></div></div>
+		<div class="lg:mt-auto lg:col-span-5 lg:flex justify-center h-full queen svelte-a35fuy"></div></div>
 </div>
 </section></main>
 
@@ -64,8 +77,8 @@
 </div>
 
 
-		<script type="module" data-sveltekit-hydrate="xfzr0f">
-			import { start } from "/ukzn_hackathon/internal/immutable/start-9bdf6cbe.js";
+		<script type="module" data-sveltekit-hydrate="12p72go">
+			import { start } from "/ukzn_hackathon/internal/immutable/start-07b1ca21.js";
 
 			start({
 				env: {},
@@ -79,12 +92,18 @@
 					form: null
 				},
 				paths: {"base":"/ukzn_hackathon","assets":"/ukzn_hackathon"},
-				target: document.querySelector('[data-sveltekit-hydrate="xfzr0f"]').parentNode,
+				target: document.querySelector('[data-sveltekit-hydrate="12p72go"]').parentNode,
 				trailing_slash: "never"
 			});
 		</script>
 	</div>
 	<script src="https://unpkg.com/flowbite@1.3.2/dist/flowbite.js"></script>
+
+	<button onclick="darkMode()"
+		class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">DarkMode</button>
+	<button onclick="lightMode()"
+		class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">LightMode</button>
+
 </body>
 
 </html>

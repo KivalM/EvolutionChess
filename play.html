@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
 	<meta charset="utf-8" />
@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width" />
 
 	<meta http-equiv="content-security-policy" content="">
-		<link href="/ukzn_hackathon/internal/immutable/assets/_layout-a92eb04b.css" rel="stylesheet">
+		<link href="/ukzn_hackathon/internal/immutable/assets/_layout-c8fd10ac.css" rel="stylesheet">
 		<script>
 			if ('serviceWorker' in navigator) {
 				addEventListener('load', function () {
@@ -15,16 +15,28 @@
 				});
 			}
 		</script><title>About</title><!-- HEAD_svelte-1bea99h_START --><link rel="manifest" crossorigin="use-credentials" href="/ukzn_hackathon/manifest.json"><!-- HEAD_svelte-1bea99h_END --><!-- HEAD_svelte-1ds1qyu_START --><meta name="description" content="About this app"><!-- HEAD_svelte-1ds1qyu_END -->
-	
+	<title>Document</title>
+
+	<script>
+		function darkMode() {
+			document.getElementsByTagName("html")[0].classList.add("dark");
+		}
+		function lightMode() {
+			document.getElementsByTagName("html")[0].classList.remove("dark");
+		}
+	</script>
+
+
+
 </head>
 
-<body data-sveltekit-prefetch>
+<body data-sveltekit-prefetch class=" dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
 	<div>
 
 
 
 
-<div class="app"><header class="shadow-md bg-gray-500"><nav class="px-2 sm:px-4 py-2.5 bg-gray-200 w-full z-20 top-0 left-0 border-b border-gray-200 "><div class="container flex flex-wrap justify-between items-center mx-auto"><a href="/ukzn_hackathon/" class="flex items-center"><img src="/ukzn_hackathon/icons/logo_512.png" class="mr-3 h-6 sm:h-9" alt="EvolvedChess Logo">
+<div class="app"><header class="shadow-md bg-gray-500"><nav class="px-2 sm:px-4 py-2.5 bg-gray-200 w-full z-20 top-0 left-0 border-b border-gray-200 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"><div class="container flex flex-wrap justify-between items-center mx-auto"><a href="/ukzn_hackathon/" class="flex items-center"><img src="/ukzn_hackathon/icons/logo_512.png" class="mr-3 h-6 sm:h-9" alt="EvolvedChess Logo">
 				<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">EvolvedChess</span>
 				<span class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900">Beta</span></a>
 			<div class="flex md:order-2"><button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false"><span class="sr-only">Open main menu</span>
@@ -42,21 +54,27 @@
 	<main>
 
 <div class="flex justify-center"><div class="shadow-xl border-gray-300 border-2 rounded-lg p-20 "><h3 class="text-3xl font-bold dark:text-white pb-4 text-center">Game Setup</h3>
-			<div class="shadow bg-grey-400 p-10 rounded flex flex-col items-start"><div class="mb-6"><span class="text-xl block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Game Type
+			<div class="shadow bg-grey-400 p-10 rounded flex flex-col items-start"><div class="mb-6"><span class="text-xl block mb-2 text-sm font-medium text-none dark:text-gray-300">Game Type
 					</span></div>
 				<div class="flex items-center mb-4"><input id="default-radio-1" checked type="radio" value="checked" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-					<label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Offline</label></div>
+					<label for="default-radio-1" class="ml-2 text-sm font-medium text-none dark:text-gray-300">Offline</label></div>
 				<div class="flex items-center"><input disabled id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-					<label for="default-radio-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Online (todo)
+					<label for="default-radio-2" class="ml-2 text-sm font-medium text-none dark:text-gray-300">Online (todo)
 					</label></div>
 
-				<div class="flex items-center"><button type="button" class="text-white bg-green-700 hover:bg-blue-800 m-4 r-0 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Go</button></div></div></div></div></main>
+				<div class="flex items-center"><button type="button" class="text-white bg-blue-700 hover:bg-blue-800 m-4 r-0 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Go</button></div></div></div></div></main>
 
 	<footer></footer>
 </div>
 
 </div>
 	<script src="https://unpkg.com/flowbite@1.3.2/dist/flowbite.js"></script>
+
+	<button onclick="darkMode()"
+		class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">DarkMode</button>
+	<button onclick="lightMode()"
+		class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">LightMode</button>
+
 </body>
 
 </html>
