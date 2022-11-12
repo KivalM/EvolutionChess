@@ -314,7 +314,7 @@
 	function waitForElement(elementId, callBack) {
 		window.setTimeout(function () {
 			var element = document.getElementById(elementId);
-			if (element) {
+			if (element && loadedCount == 12) {
 				callBack(elementId, element);
 			} else {
 				waitForElement(elementId, callBack);
