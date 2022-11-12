@@ -1,17 +1,9 @@
 <script>
 	// @ts-nocheck
 	import { base } from '$app/paths';
-	import init, { test } from 'rust';
-	// Don't worry if vscode told you can't find my-crate
-	// It's because you're using a local crate
-	// after yarn dev, wasm-pack plugin will install my-crate for you
-
-	init().then(() => {
-		console.log(test());
-	});
 	import { Chess } from 'chess.js';
-
 	import { onMount } from 'svelte';
+	import init, { best_move } from 'rust';
 
 	let canvas;
 	let ctx;
@@ -322,13 +314,21 @@
 		}, 500);
 	}
 
-	function best_move() {}
+	function bestMove() {
+		return best_move(chess.fen(), 10);
+	}
+
+	function hint() {
+		alert(best_move(chess.fen(), 3));
+	}
 
 	onMount(async () => {
 		waitForElement('side', function () {
 			sizeDiv();
 			start();
 		});
+		await init();
+		console.log('loaded wasm');
 	});
 </script>
 
@@ -360,8 +360,9 @@
 					class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
 					>Resign</span
 				>
-
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<span
+					on:click={hint}
 					class="	focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900"
 					>Hint</span
 				>

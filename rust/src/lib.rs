@@ -1,3 +1,5 @@
+#![feature(type_ascription)]
+
 use chess::{BitBoard, Board, BoardStatus, ChessMove, Color, MoveGen, Piece, Square};
 use std::{cmp, str::FromStr};
 use wasm_bindgen::prelude::wasm_bindgen;
@@ -5,6 +7,12 @@ use wasm_bindgen::prelude::wasm_bindgen;
 #[wasm_bindgen]
 pub fn test() -> String {
     "Test".to_string()
+}
+
+#[wasm_bindgen]
+pub fn best_move(current_position: &str, depth: u32) -> String {
+    web_sys::console::log_1(&"best_move".into());
+    get_best_move_minimax_alpha_beta(current_position: &str, depth: u32)
 }
 
 fn piece_score(pos: &Board) -> i32 {
