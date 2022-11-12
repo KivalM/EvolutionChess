@@ -21,7 +21,7 @@
 	{#if ready}
 		<Chess {AI} />
 	{:else}
-		<div class=" shadow-xl border-gray-300 border-2 rounded-lg p-20 ">
+		<div class=" shadow-xl border-gray-300 border-2 rounded-lg p-20 dark:border-gray-700">
 			<h3 class="text-3xl font-bold dark:text-white pb-4 text-center">Game Setup</h3>
 			<div class="shadow bg-grey-400 p-10 rounded flex flex-col items-start">
 				<div class="mb-6">
@@ -60,7 +60,7 @@
 					<h2 class="text-xl ">How to Play</h2>
 					<hr />
 					<ul
-						class="space-y-1 max-w-md text-md list-disc list-inside text-white dark:text-black-400"
+						class="space-y-1 max-w-md text-md list-disc list-inside text-white dark:text-black-400 py-4"
 					>
 						<li>
 							To play, click on a piece to select it, then click on a square to move it there. You
