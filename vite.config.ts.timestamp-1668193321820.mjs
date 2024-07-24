@@ -1,5 +1,5 @@
 // vite.config.ts
-import { sveltekit } from "file:///home/skywalker/code/ukzn_hackathon/node_modules/@sveltejs/kit/src/exports/vite/index.js";
+import { sveltekit } from "file:///home/skywalker/code/EvolutionChess/node_modules/@sveltejs/kit/src/exports/vite/index.js";
 var config = {
   plugins: [sveltekit()]
 };

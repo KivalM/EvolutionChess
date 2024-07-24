@@ -67,7 +67,7 @@
 
 <style>
 	#content {
-		background-image: url('/ukzn_hackathon/chess8.jpg');
+		background-image: url('/EvolutionChess/chess8.jpg');
 		height: 100vh;
 		background-size: cover;
 		background-repeat: no-repeat;

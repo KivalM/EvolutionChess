@@ -31,7 +31,7 @@
 
 <style>
 	.queen {
-		background-image: url('/ukzn_hackathon/queen.png');
+		background-image: url('/EvolutionChess/queen.png');
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
