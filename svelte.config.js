@@ -17,7 +17,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: process.env.NODE_ENV === "production" ? "/ukzn_hackathon" : "",
+			base: process.env.NODE_ENV === "production" ? "/EvolutionChess" : "",
 		},
 		appDir: 'internal',
 	}
