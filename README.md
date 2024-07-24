@@ -2,6 +2,8 @@
 Evolved Chess is a fun variant of chess where the pieces evolve over with takedowns. 
 This project was our entry to the Hackathon hosted by BBD Software, where we took second place.
 
+See it live [here](https://kivalm.github.io/EvolutionChess)
+
 ## Tools
 This project is made up of two key parts.
 1. The SvelteKit frontend - used for rendering and handling UI logic
