@@ -1,119 +1,119 @@
-const i = [
-  "/ukzn_hackathon/internal/immutable/assets/lightbulb-78379501.png",
-  "/ukzn_hackathon/internal/immutable/assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
-  "/ukzn_hackathon/internal/immutable/assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
-  "/ukzn_hackathon/internal/immutable/assets/fira-mono-greek-ext-400-normal-9e2fe623.woff2",
-  "/ukzn_hackathon/internal/immutable/assets/fira-mono-greek-400-normal-a8be01ce.woff2",
-  "/ukzn_hackathon/internal/immutable/assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
-  "/ukzn_hackathon/internal/immutable/assets/fira-mono-latin-400-normal-e43b3538.woff2",
-  "/ukzn_hackathon/internal/immutable/assets/fira-mono-all-400-normal-1e3b098c.woff",
-  "/ukzn_hackathon/internal/immutable/start-3dc026d9.js",
-  "/ukzn_hackathon/internal/immutable/components/pages/_layout.svelte-74155302.js",
-  "/ukzn_hackathon/internal/immutable/assets/_layout-02a70440.css",
-  "/ukzn_hackathon/internal/immutable/components/error.svelte-a9ab9c2c.js",
-  "/ukzn_hackathon/internal/immutable/components/pages/_page.svelte-d335e044.js",
-  "/ukzn_hackathon/internal/immutable/assets/_page-5185e655.css",
-  "/ukzn_hackathon/internal/immutable/components/pages/about/_page.svelte-e9e6a0bd.js",
-  "/ukzn_hackathon/internal/immutable/assets/_page-994ac01a.css",
-  "/ukzn_hackathon/internal/immutable/components/pages/play/_page.svelte-41f95eb3.js",
-  "/ukzn_hackathon/internal/immutable/components/pages/team/_page.svelte-35f2a8a1.js",
-  "/ukzn_hackathon/internal/immutable/assets/_page-40a719e3.css",
-  "/ukzn_hackathon/internal/immutable/modules/pages/_page.ts-5938f197.js",
-  "/ukzn_hackathon/internal/immutable/modules/pages/about/_page.ts-6cf9c774.js",
-  "/ukzn_hackathon/internal/immutable/modules/pages/play/_page.ts-54a31dd9.js",
-  "/ukzn_hackathon/internal/immutable/modules/pages/team/_page.ts-7908ccc3.js",
-  "/ukzn_hackathon/internal/immutable/chunks/singletons-90cfd4a6.js",
-  "/ukzn_hackathon/internal/immutable/chunks/paths-846459bd.js",
-  "/ukzn_hackathon/internal/immutable/chunks/index-f7f915e0.js",
-  "/ukzn_hackathon/internal/immutable/chunks/_page-6ab928b4.js",
-  "/ukzn_hackathon/internal/immutable/chunks/_page-b83a0680.js",
-  "/ukzn_hackathon/internal/immutable/chunks/environment-2d36df95.js",
-  "/ukzn_hackathon/internal/immutable/chunks/_page-7cf4687b.js",
-  "/ukzn_hackathon/internal/immutable/chunks/_page-8dbd44b8.js",
-  "/ukzn_hackathon/internal/immutable/chunks/0-9f2438a2.js",
-  "/ukzn_hackathon/internal/immutable/chunks/1-73298934.js",
-  "/ukzn_hackathon/internal/immutable/chunks/2-005099eb.js",
-  "/ukzn_hackathon/internal/immutable/chunks/3-9c37e46b.js",
-  "/ukzn_hackathon/internal/immutable/chunks/4-ef75c3a1.js",
-  "/ukzn_hackathon/internal/immutable/chunks/5-c90bdfdd.js"
-], l = [
-  "/ukzn_hackathon/chess/B.svg",
-  "/ukzn_hackathon/chess/K.svg",
-  "/ukzn_hackathon/chess/N.svg",
-  "/ukzn_hackathon/chess/P.svg",
-  "/ukzn_hackathon/chess/Q.svg",
-  "/ukzn_hackathon/chess/R.svg",
-  "/ukzn_hackathon/chess/b.svg",
-  "/ukzn_hackathon/chess/k.svg",
-  "/ukzn_hackathon/chess/n.svg",
-  "/ukzn_hackathon/chess/p.svg",
-  "/ukzn_hackathon/chess/q.svg",
-  "/ukzn_hackathon/chess/r.svg",
-  "/ukzn_hackathon/chess1.jpg",
-  "/ukzn_hackathon/chess2.jpg",
-  "/ukzn_hackathon/chess3.jpg",
-  "/ukzn_hackathon/chess4.jpg",
-  "/ukzn_hackathon/chess5.webp",
-  "/ukzn_hackathon/chess6.jpg",
-  "/ukzn_hackathon/chess7 copy.jpg",
-  "/ukzn_hackathon/chess7.jpg",
-  "/ukzn_hackathon/chess8.jpg",
-  "/ukzn_hackathon/favicon.png",
-  "/ukzn_hackathon/icons/EvoChess1.png",
-  "/ukzn_hackathon/icons/EvoChess2.png",
-  "/ukzn_hackathon/icons/EvoChess3.png",
-  "/ukzn_hackathon/icons/EvoChess4.png",
-  "/ukzn_hackathon/icons/EvoChess5 copy.png",
-  "/ukzn_hackathon/icons/EvoChess5.png",
-  "/ukzn_hackathon/icons/kival.png",
-  "/ukzn_hackathon/icons/logo_512.png",
-  "/ukzn_hackathon/icons/logo_512.xcf",
-  "/ukzn_hackathon/icons/seevan.jpg",
-  "/ukzn_hackathon/logo_192.png",
-  "/ukzn_hackathon/logo_512.png",
-  "/ukzn_hackathon/manifest.json",
-  "/ukzn_hackathon/queen.png",
-  "/ukzn_hackathon/queen1.jpg",
-  "/ukzn_hackathon/queen2.jpg",
-  "/ukzn_hackathon/robots.txt",
-  "/ukzn_hackathon/ukzn_hackathon/chess7.jpg",
-  "/ukzn_hackathon/ukzn_hackathon/chess8.jpg",
-  "/ukzn_hackathon/ukzn_hackathon/logo_512.png",
-  "/ukzn_hackathon/ukzn_hackathon/queen.png"
-], c = "1721827900229", e = self, o = `cache${c}`, k = i.concat(l), m = new Set(k);
-e.addEventListener("install", (a) => {
-  a.waitUntil(
-    caches.open(o).then((n) => n.addAll(k)).then(() => {
-      e.skipWaiting();
+const c = [
+  "/EvolutionChess/internal/immutable/assets/lightbulb-78379501.png",
+  "/EvolutionChess/internal/immutable/assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
+  "/EvolutionChess/internal/immutable/assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
+  "/EvolutionChess/internal/immutable/assets/fira-mono-greek-ext-400-normal-9e2fe623.woff2",
+  "/EvolutionChess/internal/immutable/assets/fira-mono-greek-400-normal-a8be01ce.woff2",
+  "/EvolutionChess/internal/immutable/assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
+  "/EvolutionChess/internal/immutable/assets/fira-mono-latin-400-normal-e43b3538.woff2",
+  "/EvolutionChess/internal/immutable/assets/fira-mono-all-400-normal-1e3b098c.woff",
+  "/EvolutionChess/internal/immutable/start-d69812fd.js",
+  "/EvolutionChess/internal/immutable/components/pages/_layout.svelte-74155302.js",
+  "/EvolutionChess/internal/immutable/assets/_layout-02a70440.css",
+  "/EvolutionChess/internal/immutable/components/error.svelte-0f8c731b.js",
+  "/EvolutionChess/internal/immutable/components/pages/_page.svelte-d335e044.js",
+  "/EvolutionChess/internal/immutable/assets/_page-5185e655.css",
+  "/EvolutionChess/internal/immutable/components/pages/about/_page.svelte-e9e6a0bd.js",
+  "/EvolutionChess/internal/immutable/assets/_page-994ac01a.css",
+  "/EvolutionChess/internal/immutable/components/pages/play/_page.svelte-41f95eb3.js",
+  "/EvolutionChess/internal/immutable/components/pages/team/_page.svelte-35f2a8a1.js",
+  "/EvolutionChess/internal/immutable/assets/_page-40a719e3.css",
+  "/EvolutionChess/internal/immutable/modules/pages/_page.ts-5938f197.js",
+  "/EvolutionChess/internal/immutable/modules/pages/about/_page.ts-6cf9c774.js",
+  "/EvolutionChess/internal/immutable/modules/pages/play/_page.ts-54a31dd9.js",
+  "/EvolutionChess/internal/immutable/modules/pages/team/_page.ts-7908ccc3.js",
+  "/EvolutionChess/internal/immutable/chunks/singletons-13120286.js",
+  "/EvolutionChess/internal/immutable/chunks/paths-846459bd.js",
+  "/EvolutionChess/internal/immutable/chunks/index-f7f915e0.js",
+  "/EvolutionChess/internal/immutable/chunks/_page-6ab928b4.js",
+  "/EvolutionChess/internal/immutable/chunks/_page-b83a0680.js",
+  "/EvolutionChess/internal/immutable/chunks/environment-2d36df95.js",
+  "/EvolutionChess/internal/immutable/chunks/_page-7cf4687b.js",
+  "/EvolutionChess/internal/immutable/chunks/_page-8dbd44b8.js",
+  "/EvolutionChess/internal/immutable/chunks/0-9f2438a2.js",
+  "/EvolutionChess/internal/immutable/chunks/1-a08e92cc.js",
+  "/EvolutionChess/internal/immutable/chunks/2-005099eb.js",
+  "/EvolutionChess/internal/immutable/chunks/3-9c37e46b.js",
+  "/EvolutionChess/internal/immutable/chunks/4-ef75c3a1.js",
+  "/EvolutionChess/internal/immutable/chunks/5-c90bdfdd.js"
+], m = [
+  "/EvolutionChess/chess/B.svg",
+  "/EvolutionChess/chess/K.svg",
+  "/EvolutionChess/chess/N.svg",
+  "/EvolutionChess/chess/P.svg",
+  "/EvolutionChess/chess/Q.svg",
+  "/EvolutionChess/chess/R.svg",
+  "/EvolutionChess/chess/b.svg",
+  "/EvolutionChess/chess/k.svg",
+  "/EvolutionChess/chess/n.svg",
+  "/EvolutionChess/chess/p.svg",
+  "/EvolutionChess/chess/q.svg",
+  "/EvolutionChess/chess/r.svg",
+  "/EvolutionChess/chess1.jpg",
+  "/EvolutionChess/chess2.jpg",
+  "/EvolutionChess/chess3.jpg",
+  "/EvolutionChess/chess4.jpg",
+  "/EvolutionChess/chess5.webp",
+  "/EvolutionChess/chess6.jpg",
+  "/EvolutionChess/chess7 copy.jpg",
+  "/EvolutionChess/chess7.jpg",
+  "/EvolutionChess/chess8.jpg",
+  "/EvolutionChess/favicon.png",
+  "/EvolutionChess/icons/EvoChess1.png",
+  "/EvolutionChess/icons/EvoChess2.png",
+  "/EvolutionChess/icons/EvoChess3.png",
+  "/EvolutionChess/icons/EvoChess4.png",
+  "/EvolutionChess/icons/EvoChess5 copy.png",
+  "/EvolutionChess/icons/EvoChess5.png",
+  "/EvolutionChess/icons/kival.png",
+  "/EvolutionChess/icons/logo_512.png",
+  "/EvolutionChess/icons/logo_512.xcf",
+  "/EvolutionChess/icons/seevan.jpg",
+  "/EvolutionChess/logo_192.png",
+  "/EvolutionChess/logo_512.png",
+  "/EvolutionChess/manifest.json",
+  "/EvolutionChess/queen.png",
+  "/EvolutionChess/queen1.jpg",
+  "/EvolutionChess/queen2.jpg",
+  "/EvolutionChess/robots.txt",
+  "/EvolutionChess/ukzn_hackathon/chess7.jpg",
+  "/EvolutionChess/ukzn_hackathon/chess8.jpg",
+  "/EvolutionChess/ukzn_hackathon/logo_512.png",
+  "/EvolutionChess/ukzn_hackathon/queen.png"
+], a = "1721828099713", o = self, l = `cache${a}`, h = c.concat(m), v = new Set(h);
+o.addEventListener("install", (s) => {
+  s.waitUntil(
+    caches.open(l).then((e) => e.addAll(h)).then(() => {
+      o.skipWaiting();
     })
   );
 });
-e.addEventListener("activate", (a) => {
-  a.waitUntil(
-    caches.keys().then(async (n) => {
-      for (const t of n)
-        t !== o && await caches.delete(t);
-      e.clients.claim();
+o.addEventListener("activate", (s) => {
+  s.waitUntil(
+    caches.keys().then(async (e) => {
+      for (const n of e)
+        n !== l && await caches.delete(n);
+      o.clients.claim();
     })
   );
 });
-async function _(a) {
-  const n = await caches.open(`offline${c}`);
+async function r(s) {
+  const e = await caches.open(`offline${a}`);
   try {
-    const t = await fetch(a);
-    return n.put(a, t.clone()), t;
-  } catch (t) {
-    const s = await n.match(a);
-    if (s)
-      return s;
-    throw t;
+    const n = await fetch(s);
+    return e.put(s, n.clone()), n;
+  } catch (n) {
+    const t = await e.match(s);
+    if (t)
+      return t;
+    throw n;
   }
 }
-e.addEventListener("fetch", (a) => {
-  if (a.request.method !== "GET" || a.request.headers.has("range"))
+o.addEventListener("fetch", (s) => {
+  if (s.request.method !== "GET" || s.request.headers.has("range"))
     return;
-  const n = new URL(a.request.url), t = n.protocol.startsWith("http"), s = n.hostname === self.location.hostname && n.port !== self.location.port, h = n.host === self.location.host && m.has(n.pathname), u = a.request.cache === "only-if-cached" && !h;
-  t && !s && !u && a.respondWith(
-    (async () => h && await caches.match(a.request) || _(a.request))()
+  const e = new URL(s.request.url), n = e.protocol.startsWith("http"), t = e.hostname === self.location.hostname && e.port !== self.location.port, i = e.host === self.location.host && v.has(e.pathname), u = s.request.cache === "only-if-cached" && !i;
+  n && !t && !u && s.respondWith(
+    (async () => i && await caches.match(s.request) || r(s.request))()
   );
 });

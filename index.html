@@ -3,27 +3,27 @@
 
 <head>
 	<meta charset="utf-8" />
-	<link rel="icon" href="/ukzn_hackathon/favicon.png" />
+	<link rel="icon" href="/EvolutionChess/favicon.png" />
 	<meta name="viewport" content="width=device-width" />
 
 	<meta http-equiv="content-security-policy" content="">
-		<link href="/ukzn_hackathon/internal/immutable/assets/_layout-02a70440.css" rel="stylesheet">
-		<link href="/ukzn_hackathon/internal/immutable/assets/_page-5185e655.css" rel="stylesheet">
-		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/start-3dc026d9.js">
-		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/chunks/index-f7f915e0.js">
-		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/chunks/singletons-90cfd4a6.js">
-		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/chunks/paths-846459bd.js">
-		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/components/pages/_layout.svelte-74155302.js">
-		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/components/pages/_page.svelte-d335e044.js">
-		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/modules/pages/_page.ts-5938f197.js">
-		<link rel="modulepreload" href="/ukzn_hackathon/internal/immutable/chunks/_page-6ab928b4.js">
+		<link href="/EvolutionChess/internal/immutable/assets/_layout-02a70440.css" rel="stylesheet">
+		<link href="/EvolutionChess/internal/immutable/assets/_page-5185e655.css" rel="stylesheet">
+		<link rel="modulepreload" href="/EvolutionChess/internal/immutable/start-d69812fd.js">
+		<link rel="modulepreload" href="/EvolutionChess/internal/immutable/chunks/index-f7f915e0.js">
+		<link rel="modulepreload" href="/EvolutionChess/internal/immutable/chunks/singletons-13120286.js">
+		<link rel="modulepreload" href="/EvolutionChess/internal/immutable/chunks/paths-846459bd.js">
+		<link rel="modulepreload" href="/EvolutionChess/internal/immutable/components/pages/_layout.svelte-74155302.js">
+		<link rel="modulepreload" href="/EvolutionChess/internal/immutable/components/pages/_page.svelte-d335e044.js">
+		<link rel="modulepreload" href="/EvolutionChess/internal/immutable/modules/pages/_page.ts-5938f197.js">
+		<link rel="modulepreload" href="/EvolutionChess/internal/immutable/chunks/_page-6ab928b4.js">
 		<script>
 			if ('serviceWorker' in navigator) {
 				addEventListener('load', function () {
-					navigator.serviceWorker.register('/ukzn_hackathon/service-worker.js');
+					navigator.serviceWorker.register('/EvolutionChess/service-worker.js');
 				});
 			}
-		</script><title>Evolved Chess</title><!-- HEAD_svelte-1bea99h_START --><link rel="manifest" crossorigin="use-credentials" href="/ukzn_hackathon/manifest.json"><!-- HEAD_svelte-1bea99h_END --><!-- HEAD_svelte-14dltew_START --><meta name="description" content="Evolved Chess app"><!-- HEAD_svelte-14dltew_END -->
+		</script><title>Evolved Chess</title><!-- HEAD_svelte-1bea99h_START --><link rel="manifest" crossorigin="use-credentials" href="/EvolutionChess/manifest.json"><!-- HEAD_svelte-1bea99h_END --><!-- HEAD_svelte-14dltew_START --><meta name="description" content="Evolved Chess app"><!-- HEAD_svelte-14dltew_END -->
 	<title>Document</title>
 
 	<script>
@@ -40,19 +40,19 @@
 
 
 
-<div class="app"><header class="shadow-md bg-gray-500"><nav class="px-2 sm:px-4 py-2.5 bg-gray-200 w-full z-20 top-0 left-0 border-b border-gray-200 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"><div class="flex space-x-4 container flex flex-wrap justify-between items-center mx-auto"><a href="/ukzn_hackathon/" class="flex items-center"><img src="/ukzn_hackathon/icons/EvoChess5.png" class="mr-3 h-6 sm:h-9" alt="EvoChess5">
+<div class="app"><header class="shadow-md bg-gray-500"><nav class="px-2 sm:px-4 py-2.5 bg-gray-200 w-full z-20 top-0 left-0 border-b border-gray-200 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"><div class="flex space-x-4 container flex flex-wrap justify-between items-center mx-auto"><a href="/EvolutionChess/" class="flex items-center"><img src="/EvolutionChess/icons/EvoChess5.png" class="mr-3 h-6 sm:h-9" alt="EvoChess5">
 				<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">EvoChess</span>
 				<span class="mx-3 bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900">Beta</span></a>
 			<div class="flex md:order-2"><button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false"><span class="sr-only">Open main menu</span>
 					<svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg></button></div>
-			<div class="hidden justify-between items-end w-full md:flex md:w-auto md:order-1" id="navbar-sticky"><ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"><li><a href="/ukzn_hackathon/" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a></li>
-					<li><a href="/ukzn_hackathon/about" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a></li>
+			<div class="hidden justify-between items-end w-full md:flex md:w-auto md:order-1" id="navbar-sticky"><ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"><li><a href="/EvolutionChess/" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a></li>
+					<li><a href="/EvolutionChess/about" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a></li>
 
-					<li><a href="/ukzn_hackathon/team" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Team</a></li>
+					<li><a href="/EvolutionChess/team" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Team</a></li>
 
-					<li><a href="/ukzn_hackathon/play" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Play Now</a></li></ul></div>
+					<li><a href="/EvolutionChess/play" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Play Now</a></li></ul></div>
 
-			<div class="flex md:order-2"><button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5" aria-label="Toggle color mode"><img src="/ukzn_hackathon/internal/immutable/assets/lightbulb-78379501.png" alt="" class="mr-3 h-6 sm:h-9 dark:invert"></button></div></div></nav>
+			<div class="flex md:order-2"><button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5" aria-label="Toggle color mode"><img src="/EvolutionChess/internal/immutable/assets/lightbulb-78379501.png" alt="" class="mr-3 h-6 sm:h-9 dark:invert"></button></div></div></nav>
 </header>
 
 	<main>
@@ -62,7 +62,7 @@
 				with complex evolution and AI, Chess is a game that will never be the same.
 			</p>
 
-			<a href="/ukzn_hackathon/play" class="bg-blue-800 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-gray-300 hover:bg-blue-600 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">Play Now
+			<a href="/EvolutionChess/play" class="bg-blue-800 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-gray-300 hover:bg-blue-600 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">Play Now
 			</a></div>
 		<div class="lg:mt-auto lg:col-span-5 lg:flex justify-center h-full queen svelte-a35fuy"></div></div>
 </div>
@@ -72,8 +72,8 @@
 </div>
 
 
-		<script type="module" data-sveltekit-hydrate="12sb9x9">
-			import { start } from "/ukzn_hackathon/internal/immutable/start-3dc026d9.js";
+		<script type="module" data-sveltekit-hydrate="1f30b99">
+			import { start } from "/EvolutionChess/internal/immutable/start-d69812fd.js";
 
 			start({
 				env: {},
@@ -86,8 +86,8 @@
 					data: [null,null],
 					form: null
 				},
-				paths: {"base":"/ukzn_hackathon","assets":"/ukzn_hackathon"},
-				target: document.querySelector('[data-sveltekit-hydrate="12sb9x9"]').parentNode,
+				paths: {"base":"/EvolutionChess","assets":"/EvolutionChess"},
+				target: document.querySelector('[data-sveltekit-hydrate="1f30b99"]').parentNode,
 				trailing_slash: "never"
 			});
 		</script>
